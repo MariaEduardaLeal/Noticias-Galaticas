@@ -1,0 +1,41 @@
+/*Tirar a estilização do navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container{
+    width: 720px;
+    box-shadow: 9px 9px 27px 0px rgb(0, 0, 0, 0.75);
+    -webkit-box-shadow: 9px 9px 27px 0px rgb(0,0,0,0.75);
+    -moz-box-shadow: 9px 9px 27px 0px rgb(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: row; /*Por padrão o html entende que os elementos devem
+    ficar em coluna, quando definimos a flex-direction como row ele começa a interpretar que eles devem ficar na mesma linha*/
+    justify-content: space-between;
+}
+
+.card-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.card-left span{
+    font-weight: bold;
+
+}
+
+.card-left h1{
+    margin-top: 15px;
+    font-size: 25px;
+    
+}
+
+.card-left p{
+    color: grey;
+}
+
